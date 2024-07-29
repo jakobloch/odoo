@@ -1,4 +1,8 @@
-#!/Users/jakoblochinski/Documents/GitHub/odoo/odoo_venv/bin/python
-# EASY-INSTALL-SCRIPT: 'odoo==17.0','odoo'
-__requires__ = 'odoo==17.0'
-__import__('pkg_resources').run_script('odoo==17.0', 'odoo')
+#!/Users/jakoblochinski/Documents/GitHub/odoo/odoo_venv/bin/python3.12
+
+# set server timezone in UTC before time module imported
+__import__('os').environ['TZ'] = 'UTC'
+import odoo
+
+if __name__ == "__main__":
+    odoo.cli.main()
