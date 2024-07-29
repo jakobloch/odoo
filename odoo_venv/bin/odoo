@@ -1,0 +1,4 @@
+#!/Users/jakoblochinski/Documents/GitHub/odoo/odoo_venv/bin/python
+# EASY-INSTALL-SCRIPT: 'odoo==17.0','odoo'
+__requires__ = 'odoo==17.0'
+__import__('pkg_resources').run_script('odoo==17.0', 'odoo')
